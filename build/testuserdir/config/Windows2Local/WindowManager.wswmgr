@@ -3,10 +3,10 @@
 <windowmanager version="2.1">
     <main-window>
   <joined-properties
-   x="113"
-   y="91"
-   width="1453"
-   height="923"
+   x="128"
+   y="89"
+   width="2304"
+   height="1262"
    relative-x="0.0"
    relative-y="0.0"
    relative-width="0.0"
@@ -18,10 +18,10 @@
    frame-state="0"
 />
   <separated-properties
-   x="194"
-   y="102"
-   width="1292"
-   height="82"
+   x="256"
+   y="140"
+   width="2048"
+   height="112"
    relative-x="0.0"
    relative-y="0.0"
    relative-width="0.0"
@@ -38,8 +38,8 @@
   <path orientation="horizontal" number="40" weight="0.7" />
   <path orientation="vertical" number="40" weight="0.5" />
   </constraints>
-  <bounds x="532" y="246" width="678" height="451" />
+  <bounds x="844" y="336" width="1075" height="617" />
     </editor-area>
-    <screen width="1680" height="1050"/>
+    <screen width="2560" height="1440"/>
     <toolbar configuration="Standard" preferred-icon-size="24"/>
 </windowmanager>
