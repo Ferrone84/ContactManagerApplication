@@ -7,6 +7,10 @@ package m1.piu;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javafx.scene.control.Label;
+import javafx.scene.layout.Pane;
+import org.openide.DialogDisplayer;
+import org.openide.NotifyDescriptor;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
 import org.openide.awt.ActionRegistration;
@@ -25,6 +29,22 @@ public final class Clear implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO implement action body
+		String okValue = "Ok";
+		String cancelValue = "Cancel";
+		String[] options = new String[]{okValue, cancelValue};
+		
+		
+		NotifyDescriptor nd = new NotifyDescriptor(
+            "Voulez vous vraiment clear ?",
+            "Confirmation",
+            NotifyDescriptor.YES_NO_OPTION,
+            NotifyDescriptor.QUESTION_MESSAGE,
+            options,
+            okValue
+		);
+		String selectedValue = (String)DialogDisplayer.getDefault().notify(nd);
+		if (selectedValue.equals(okValue)) {
+			DialogDisplayer.getDefault().notify(new NotifyDescriptor.Message("Vous avez bien clear.", NotifyDescriptor.INFORMATION_MESSAGE));
+		}
 	}
 }

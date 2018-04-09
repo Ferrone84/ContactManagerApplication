@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="m1.piu">
-    <module_version install_time="1523280638863" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1523284768100" last="true" origin="installer" specification_version="1.0">
         <file crc="1699444340" name="config/Modules/m1-piu.xml"/>
-        <file crc="3565639547" name="modules/m1-piu.jar"/>
+        <file crc="1803082395" name="modules/m1-piu.jar"/>
     </module_version>
 </module>
