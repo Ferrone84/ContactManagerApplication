@@ -19,9 +19,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.openide.DialogDisplayer;
+import org.openide.NotifyDescriptor;
 
 /**
  *
@@ -33,10 +36,49 @@ public class FXMLMainFrameController extends JFXPanel implements Initializable {
     private MenuButton contactType;
     
     @FXML
-    private Button identify, phones, address, addPhoneNumber, closeButton;
+    private Button identify;
+    
+    @FXML
+    private Button phones;
+    
+    @FXML
+    private Button address;
+    
+    @FXML
+    private Button addPhoneNumber;
+    
+    @FXML
+    private Button closeButton;
     
     @FXML
     private Pane contentPaneContact;
+	
+	@FXML
+	private TextField contactFirstName;
+	
+	@FXML
+	private TextField contactLastName;
+	
+	
+	@FXML
+	private void handleValidContact(ActionEvent event) {
+		String message = "";
+		
+		if (contentPaneContact == null)
+			System.out.println("LELELELLE"); //TODO ici
+		
+		
+        if (contactFirstName.getText().isEmpty()) {
+			message = "Le champ 'First Name' est vide.";
+		}
+		if (contactLastName.getText().isEmpty()) {
+			message = "Le champ 'Last Name' est vide.";
+		}
+		if (contactFirstName.getText().isEmpty() && contactLastName.getText().isEmpty()) {
+			message = "Les champs 'First Name' et 'Last Name' sont vide.";
+		}
+		DialogDisplayer.getDefault().notify(new NotifyDescriptor.Message(message, NotifyDescriptor.INFORMATION_MESSAGE));
+	}
 	
 	@FXML
 	private void handleAddContact(ActionEvent event) {
