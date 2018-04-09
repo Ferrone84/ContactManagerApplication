@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
->Log Session: Monday, April 9, 2018 10:07:13 PM CEST
+>Log Session: Monday, April 9, 2018 10:44:29 PM CEST
 >System Info: 
   Product Version         = NetBeans Platform 8.2 (Build 201609300101)
   Operating System        = Windows 8.1 version 6.3 running on amd64
@@ -86,6 +86,9 @@ INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network prox
 INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy: fell to default (correct if direct mode went before)
 WARNING [org.openide.filesystems.Ordering]: Not all children in Menu/ marked with the position attribute: [Vue], but some are: [File]
 INFO [org.netbeans.ui.metrics.laf]: USG_LOOK_AND_FEEL
+WARNING [javafx]: Loading FXML document with JavaFX API of version 8.0.141 by JavaFX runtime of version 8.0.102
+WARNING [javafx]: Loading FXML document with JavaFX API of version 9.0.1 by JavaFX runtime of version 8.0.102
+WARNING [javafx]: Loading FXML document with JavaFX API of version 8.0.141 by JavaFX runtime of version 8.0.102
 Diagnostic information
 Input arguments:
 	-Dnetbeans.logger.console=true
@@ -110,9 +113,9 @@ Input arguments:
 Compiler: HotSpot 64-Bit Tiered Compilers
 Heap memory usage: initial 256,0MB maximum 3628,5MB
 Non heap memory usage: initial 2,4MB maximum -1b
-Garbage collector: PS Scavenge (Collections=2 Total time spent=0s)
-Garbage collector: PS MarkSweep (Collections=1 Total time spent=0s)
-Classes: loaded=4250 total loaded=4250 unloaded 0
+Garbage collector: PS Scavenge (Collections=4 Total time spent=0s)
+Garbage collector: PS MarkSweep (Collections=2 Total time spent=0s)
+Classes: loaded=6309 total loaded=6309 unloaded 0
 INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 17 114 996 736
 INFO [null]: Total physical memory 17 114 996 736
 WARNING [org.openide.filesystems.Ordering]: Not all children in Menu/Vue/ marked with the position attribute: [Clear.java], but some are: [m1-piu-Clear.shadow]

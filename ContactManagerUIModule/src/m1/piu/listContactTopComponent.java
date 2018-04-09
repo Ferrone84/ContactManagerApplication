@@ -5,9 +5,19 @@
  */
 package m1.piu;
 
+import java.awt.BorderLayout;
+import java.io.IOException;
+import java.net.URL;
+import javafx.application.Platform;
+import javafx.embed.swing.JFXPanel;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.JavaFXBuilderFactory;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import org.netbeans.api.settings.ConvertAsProperties;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
+import org.openide.util.Exceptions;
 import org.openide.windows.TopComponent;
 import org.openide.util.NbBundle.Messages;
 
@@ -37,6 +47,9 @@ import org.openide.util.NbBundle.Messages;
 })
 public final class listContactTopComponent extends TopComponent {
 
+    private FXMLMainFrameController controller;
+    private JFXPanel fxPanel;
+
 	public listContactTopComponent() {
 		initComponents();
 		setName(Bundle.CTL_listContactTopComponent());
@@ -45,8 +58,40 @@ public final class listContactTopComponent extends TopComponent {
 		putClientProperty(TopComponent.PROP_DRAGGING_DISABLED, Boolean.TRUE);
 		putClientProperty(TopComponent.PROP_MAXIMIZATION_DISABLED, Boolean.TRUE);
 		putClientProperty(TopComponent.PROP_UNDOCKING_DISABLED, Boolean.TRUE);
-
+        
+        setLayout(new BorderLayout());
+        
+        init();
 	}
+
+    private void init() {
+        fxPanel = new JFXPanel();
+        add(fxPanel, BorderLayout.CENTER);
+        Platform.setImplicitExit(false);
+        Platform.runLater(new Runnable() {
+			@Override
+			public void run() {
+                createScene();
+            }
+        });
+    }
+ 
+    private void createScene() {
+        try {
+            URL location = getClass().getResource("FXMLContactList.fxml");
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(location);
+            fxmlLoader.setBuilderFactory(new JavaFXBuilderFactory());
+ 
+            Parent root = (Parent) fxmlLoader.load(location.openStream());
+            Scene scene = new Scene(root);
+            fxPanel.setScene(scene);
+            controller = (FXMLMainFrameController) fxmlLoader.getController();
+ 
+        } catch (IOException ex) {
+            Exceptions.printStackTrace(ex);
+        }
+    }
 
 	/**
 	 * This method is called from within the constructor to initialize the form.
