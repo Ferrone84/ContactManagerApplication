@@ -15,7 +15,7 @@
    centered-vertically="false"
    maximize-if-width-below="0"
    maximize-if-height-below="0"
-   frame-state="0"
+   frame-state="6"
 />
   <separated-properties
    x="256"
@@ -33,13 +33,19 @@
   </main-window>
     <editor-area state="joined" frame-state="0">
   <constraints>
-  <path orientation="horizontal" number="60" weight="0.7" />
-  <path orientation="vertical" number="40" weight="0.7" />
-  <path orientation="horizontal" number="40" weight="0.7" />
+  <path orientation="horizontal" number="60" weight="0.7314564158094207" />
+  <path orientation="vertical" number="40" weight="0.5264735264735265" />
+  <path orientation="horizontal" number="40" weight="0.007734550235903782" />
   <path orientation="vertical" number="40" weight="0.5" />
   </constraints>
   <bounds x="844" y="336" width="1075" height="617" />
     </editor-area>
-    <screen width="2560" height="1440"/>
+    <screen width="1920" height="1080"/>
+    <active-mode name="explorer"/>
     <toolbar configuration="Standard" preferred-icon-size="24"/>
+    <tc-list>
+  <tc-id id="adressBookTopComponent"/>
+  <tc-id id="listContactTopComponent"/>
+  <tc-id id="contactDetailsTopComponent"/>
+    </tc-list>
 </windowmanager>

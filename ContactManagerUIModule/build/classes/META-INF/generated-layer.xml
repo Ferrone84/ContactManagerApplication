@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Templates">
+        <folder name="Other">
+            <file name="m1-piu-ContactFormWizardIterator">
+                <!--m1.piu.ContactFormWizardIterator-->
+                <attr boolvalue="true" name="template"/>
+                <attr
+                    bundlevalue="m1.piu.Bundle#ContactFormWizardIterator_displayName" name="displayName"/>
+                <attr name="iconBase" stringvalue="m1/piu/flash.jpg"/>
+                <attr name="instantiatingWizardURL" urlvalue="nbresloc:/m1/piu/contactForm.html"/>
+                <attr name="instantiatingIterator" newvalue="m1.piu.ContactFormWizardIterator"/>
+                <attr boolvalue="true" name="requireProject"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="xml">
+        <folder name="entities">
+            <folder name="m1_piu">
+                <file name="adressBook" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--m1.piu.adressBookTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//m1.piu//adressBook//EN"/>
+                </file>
+                <file name="contactDetails" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--m1.piu.contactDetailsTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//m1.piu//contactDetails//EN"/>
+                </file>
+                <file name="listContact" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--m1.piu.listContactTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//m1.piu//listContact//EN"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="memory">
+            <folder name="m1">
+                <folder name="piu">
+                    <file name="adressBookTopComponent">
+                        <!--m1.piu.adressBookTopComponent-->
+                        <attr name="settings.providerPath" stringvalue="xml/lookups//m1_piu/adressBook.instance"/>
+                    </file>
+                    <file name="contactDetailsTopComponent">
+                        <!--m1.piu.contactDetailsTopComponent-->
+                        <attr name="settings.providerPath" stringvalue="xml/lookups//m1_piu/contactDetails.instance"/>
+                    </file>
+                    <file name="listContactTopComponent">
+                        <!--m1.piu.listContactTopComponent-->
+                        <attr name="settings.providerPath" stringvalue="xml/lookups//m1_piu/listContact.instance"/>
+                    </file>
+                </folder>
+            </folder>
+        </folder>
+        <folder name="lookups">
+            <folder name="m1_piu">
+                <file name="adressBook.instance">
+                    <!--m1.piu.adressBookTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="m1.piu.adressBookTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="m1.piu.adressBookTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+                <file name="contactDetails.instance">
+                    <!--m1.piu.contactDetailsTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="m1.piu.contactDetailsTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="m1.piu.contactDetailsTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+                <file name="listContact.instance">
+                    <!--m1.piu.listContactTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="m1.piu.listContactTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="m1.piu.listContactTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Actions">
+        <folder name="File">
+            <file name="m1-piu-Clear.instance">
+                <!--m1.piu.Clear-->
+                <attr bundlevalue="m1.piu.Bundle#CTL_Clear" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="m1.piu.Clear"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="m1-piu-adressBookTopComponent.instance">
+                <!--m1.piu.adressBookTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="m1.piu.adressBookTopComponent"/>
+                <attr name="preferredID" stringvalue="adressBookTopComponent"/>
+                <attr bundlevalue="m1.piu.Bundle#CTL_adressBookAction" name="displayName"/>
+            </file>
+            <file name="m1-piu-contactDetailsTopComponent.instance">
+                <!--m1.piu.contactDetailsTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="m1.piu.contactDetailsTopComponent"/>
+                <attr name="preferredID" stringvalue="contactDetailsTopComponent"/>
+                <attr
+                    bundlevalue="m1.piu.Bundle#CTL_contactDetailsAction" name="displayName"/>
+            </file>
+            <file name="m1-piu-listContactTopComponent.instance">
+                <!--m1.piu.listContactTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="m1.piu.listContactTopComponent"/>
+                <attr name="preferredID" stringvalue="listContactTopComponent"/>
+                <attr bundlevalue="m1.piu.Bundle#CTL_listContactAction" name="displayName"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Vue">
+            <file name="m1-piu-Clear.shadow">
+                <!--m1.piu.Clear-->
+                <attr name="originalFile" stringvalue="Actions/File/m1-piu-Clear.instance"/>
+                <attr intvalue="3333" name="position"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="m1-piu-adressBookTopComponent.shadow">
+                <!--m1.piu.adressBookTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/m1-piu-adressBookTopComponent.instance"/>
+            </file>
+            <file name="m1-piu-contactDetailsTopComponent.shadow">
+                <!--m1.piu.contactDetailsTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/m1-piu-contactDetailsTopComponent.instance"/>
+            </file>
+            <file name="m1-piu-listContactTopComponent.shadow">
+                <!--m1.piu.listContactTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/m1-piu-listContactTopComponent.instance"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="adressBookTopComponent.settings">
+                <!--m1.piu.adressBookTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="m1.piu.adressBookTopComponent"/>
+</settings>
+]]></file>
+            <file name="contactDetailsTopComponent.settings">
+                <!--m1.piu.contactDetailsTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="m1.piu.contactDetailsTopComponent"/>
+</settings>
+]]></file>
+            <file name="listContactTopComponent.settings">
+                <!--m1.piu.listContactTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="m1.piu.listContactTopComponent"/>
+</settings>
+]]></file>
+        </folder>
+        <folder name="Modes">
+            <folder name="explorer">
+                <file name="adressBookTopComponent.wstcref">
+                    <!--m1.piu.adressBookTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="adressBookTopComponent"/>
+  <state opened="true"/>
+</tc-ref>
+]]></file>
+            </folder>
+            <folder name="output">
+                <file name="contactDetailsTopComponent.wstcref">
+                    <!--m1.piu.contactDetailsTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="contactDetailsTopComponent"/>
+  <state opened="true"/>
+</tc-ref>
+]]></file>
+            </folder>
+            <folder name="editor">
+                <file name="listContactTopComponent.wstcref">
+                    <!--m1.piu.listContactTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="listContactTopComponent"/>
+  <state opened="true"/>
+</tc-ref>
+]]></file>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>

@@ -5,12 +5,12 @@
   <kind type="view" />
   <state type="joined"  />
   <constraints>
-    <path orientation="horizontal" number="60" weight="0.7"/>
-    <path orientation="vertical" number="40" weight="0.7"/>
-    <path orientation="horizontal" number="80" weight="0.3"/>
+    <path orientation="horizontal" number="60" weight="0.7314564158094207"/>
+    <path orientation="vertical" number="40" weight="0.5264735264735265"/>
+    <path orientation="horizontal" number="80" weight="0.9861551550777323"/>
     <path orientation="vertical" number="80" weight="0.5"/>
   </constraints>
-  <bounds x="1920" y="785" width="384" height="448" />
+  <bounds x="65" y="785" width="384" height="448" />
   <frame state="0"/>
     <empty-behavior permanent="true"/>
 </mode>
