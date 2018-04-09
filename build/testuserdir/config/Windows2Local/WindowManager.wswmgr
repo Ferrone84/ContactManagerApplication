@@ -3,8 +3,8 @@
 <windowmanager version="2.1">
     <main-window>
   <joined-properties
-   x="131"
-   y="130"
+   x="566"
+   y="247"
    width="1669"
    height="950"
    relative-x="0.0"
@@ -33,19 +33,19 @@
   </main-window>
     <editor-area state="joined" frame-state="0">
   <constraints>
-  <path orientation="horizontal" number="60" weight="0.7" />
-  <path orientation="vertical" number="40" weight="0.7" />
+  <path orientation="horizontal" number="60" weight="0.7207043108682453" />
+  <path orientation="vertical" number="40" weight="0.6202090592334495" />
   <path orientation="horizontal" number="40" weight="0.7" />
   <path orientation="vertical" number="40" weight="0.5" />
   </constraints>
   <bounds x="612" y="253" width="779" height="464" />
     </editor-area>
-    <screen width="1920" height="1080"/>
-    <active-mode name="explorer"/>
+    <screen width="3840" height="2160"/>
+    <active-mode name="editor"/>
     <toolbar configuration="Standard" preferred-icon-size="24"/>
     <tc-list>
-  <tc-id id="adressBookTopComponent"/>
   <tc-id id="listContactTopComponent"/>
+  <tc-id id="adressBookTopComponent"/>
   <tc-id id="contactDetailsTopComponent"/>
     </tc-list>
 </windowmanager>

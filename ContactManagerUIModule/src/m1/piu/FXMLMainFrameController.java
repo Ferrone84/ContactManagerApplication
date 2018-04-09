@@ -51,33 +51,45 @@ public class FXMLMainFrameController extends JFXPanel implements Initializable {
     private Button closeButton;
     
     @FXML
+    private Button okButton;
+    
+    @FXML
     private Pane contentPaneContact;
-	
+    
+    @FXML
+    private Pane contentPanel;
+    
+    @FXML
+    private FXMLContactFrameController contentPanelController;
+    
+    
 	@FXML
-	private TextField contactFirstName;
-	
-	@FXML
-	private TextField contactLastName;
-	
-	
-	@FXML
-	private void handleValidContact(ActionEvent event) {
+	private void handleValidContact(ActionEvent event) {        
+        boolean close = true;
 		String message = "";
+        TextField firstName = contentPanelController.getFirstName();
+        TextField lastName = contentPanelController.getLastName();
 		
-		if (contentPaneContact == null)
-			System.out.println("LELELELLE"); //TODO ici
-		
-		
-        if (contactFirstName.getText().isEmpty()) {
+        if (firstName.getText().isEmpty()) {
 			message = "Le champ 'First Name' est vide.";
+            close = false;
 		}
-		if (contactLastName.getText().isEmpty()) {
+		if (lastName.getText().isEmpty()) {
 			message = "Le champ 'Last Name' est vide.";
+            close = false;
 		}
-		if (contactFirstName.getText().isEmpty() && contactLastName.getText().isEmpty()) {
+		if (firstName.getText().isEmpty() && lastName.getText().isEmpty()) {
 			message = "Les champs 'First Name' et 'Last Name' sont vide.";
+            close = false;
 		}
-		DialogDisplayer.getDefault().notify(new NotifyDescriptor.Message(message, NotifyDescriptor.INFORMATION_MESSAGE));
+        
+        if (close) {
+            Stage stg = (Stage) okButton.getScene().getWindow();
+            stg.close();
+        }
+        else {            
+            DialogDisplayer.getDefault().notify(new NotifyDescriptor.Message(message, NotifyDescriptor.INFORMATION_MESSAGE));
+        }
 	}
 	
 	@FXML

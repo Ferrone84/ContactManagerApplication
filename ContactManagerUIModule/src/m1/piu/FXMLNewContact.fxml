@@ -23,7 +23,7 @@
       <Button fx:id="identify" layoutX="15.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleIdentify" prefHeight="41.0" prefWidth="79.0" text="Identify" />
       <Button fx:id="phones" layoutX="110.0" layoutY="72.0" mnemonicParsing="false" onAction="#handlePhones" prefHeight="41.0" prefWidth="79.0" style="-fx-background-color: gray;" text="Phones" textAlignment="CENTER" />
       <Button fx:id="address" layoutX="206.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleAddress" prefHeight="41.0" prefWidth="79.0" style="-fx-background-color: gray;" text="Address" />
-      <Button layoutX="220.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleValidContact" prefWidth="75.0" text="OK" />
+      <Button fx:id="okButton" layoutX="220.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleValidContact" prefWidth="75.0" text="OK" />
       <Button layoutX="136.0" layoutY="361.0" mnemonicParsing="false" onAction="#closeWindow" prefWidth="75.0" text="Cancel" />
       <Pane fx:id="contentPaneContact" layoutX="10.0" layoutY="120.0" prefHeight="230.0" prefWidth="276.0" style="-fx-border-color: black;">
           <fx:include fx:id="contentPanel" source="FXMLIdentify.fxml" />

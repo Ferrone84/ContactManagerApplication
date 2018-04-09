@@ -2,17 +2,106 @@
 <!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
                             "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
 <filesystem>
-    <folder name="Templates">
-        <folder name="Other">
-            <file name="m1-piu-ContactFormWizardIterator">
-                <!--m1.piu.ContactFormWizardIterator-->
-                <attr boolvalue="true" name="template"/>
+    <folder name="Actions">
+        <folder name="File">
+            <file name="m1-piu-Clear.instance">
+                <!--m1.piu.Clear-->
+                <attr bundlevalue="m1.piu.Bundle#CTL_Clear" name="displayName"/>
                 <attr
-                    bundlevalue="m1.piu.Bundle#ContactFormWizardIterator_displayName" name="displayName"/>
-                <attr name="iconBase" stringvalue="m1/piu/flash.jpg"/>
-                <attr name="instantiatingWizardURL" urlvalue="nbresloc:/m1/piu/contactForm.html"/>
-                <attr name="instantiatingIterator" newvalue="m1.piu.ContactFormWizardIterator"/>
-                <attr boolvalue="true" name="requireProject"/>
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="m1.piu.Clear"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="m1-piu-NouvelleFiche.instance">
+                <!--m1.piu.NouvelleFiche-->
+                <attr bundlevalue="m1.piu.Bundle#CTL_NouvelleFiche" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="m1.piu.NouvelleFiche"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="m1-piu-Open.instance">
+                <!--m1.piu.Open-->
+                <attr bundlevalue="m1.piu.Bundle#CTL_Open" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="m1.piu.Open"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="m1-piu-Save.instance">
+                <!--m1.piu.Save-->
+                <attr bundlevalue="m1.piu.Bundle#CTL_Save" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="m1.piu.Save"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="m1-piu-adressBookTopComponent.instance">
+                <!--m1.piu.adressBookTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="m1.piu.adressBookTopComponent"/>
+                <attr name="preferredID" stringvalue="adressBookTopComponent"/>
+                <attr bundlevalue="m1.piu.Bundle#CTL_adressBookAction" name="displayName"/>
+            </file>
+            <file name="m1-piu-contactDetailsTopComponent.instance">
+                <!--m1.piu.contactDetailsTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="m1.piu.contactDetailsTopComponent"/>
+                <attr name="preferredID" stringvalue="contactDetailsTopComponent"/>
+                <attr
+                    bundlevalue="m1.piu.Bundle#CTL_contactDetailsAction" name="displayName"/>
+            </file>
+            <file name="m1-piu-listContactTopComponent.instance">
+                <!--m1.piu.listContactTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="m1.piu.listContactTopComponent"/>
+                <attr name="preferredID" stringvalue="listContactTopComponent"/>
+                <attr bundlevalue="m1.piu.Bundle#CTL_listContactAction" name="displayName"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Vue">
+            <file name="m1-piu-Clear.shadow">
+                <!--m1.piu.Clear-->
+                <attr name="originalFile" stringvalue="Actions/File/m1-piu-Clear.instance"/>
+                <attr intvalue="3333" name="position"/>
+            </file>
+        </folder>
+        <folder name="File">
+            <file name="m1-piu-NouvelleFiche.shadow">
+                <!--m1.piu.NouvelleFiche-->
+                <attr name="originalFile" stringvalue="Actions/File/m1-piu-NouvelleFiche.instance"/>
+                <attr intvalue="2300" name="position"/>
+            </file>
+            <file name="m1-piu-Open.shadow">
+                <!--m1.piu.Open-->
+                <attr name="originalFile" stringvalue="Actions/File/m1-piu-Open.instance"/>
+                <attr intvalue="2400" name="position"/>
+            </file>
+            <file name="m1-piu-Save.shadow">
+                <!--m1.piu.Save-->
+                <attr name="originalFile" stringvalue="Actions/File/m1-piu-Save.instance"/>
+                <attr intvalue="2500" name="position"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="m1-piu-adressBookTopComponent.shadow">
+                <!--m1.piu.adressBookTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/m1-piu-adressBookTopComponent.instance"/>
+            </file>
+            <file name="m1-piu-contactDetailsTopComponent.shadow">
+                <!--m1.piu.contactDetailsTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/m1-piu-contactDetailsTopComponent.instance"/>
+            </file>
+            <file name="m1-piu-listContactTopComponent.shadow">
+                <!--m1.piu.listContactTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/m1-piu-listContactTopComponent.instance"/>
             </file>
         </folder>
     </folder>
@@ -86,109 +175,6 @@
             </folder>
         </folder>
     </folder>
-    <folder name="Actions">
-        <folder name="File">
-            <file name="m1-piu-Clear.instance">
-                <!--m1.piu.Clear-->
-                <attr bundlevalue="m1.piu.Bundle#CTL_Clear" name="displayName"/>
-                <attr
-                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
-                <attr name="delegate" newvalue="m1.piu.Clear"/>
-                <attr boolvalue="false" name="noIconInMenu"/>
-            </file>
-            <file name="m1-piu-Open.instance">
-                <!--m1.piu.Open-->
-                <attr bundlevalue="m1.piu.Bundle#CTL_Open" name="displayName"/>
-                <attr
-                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
-                <attr name="delegate" newvalue="m1.piu.Open"/>
-                <attr boolvalue="false" name="noIconInMenu"/>
-            </file>
-            <file name="m1-piu-Save.instance">
-                <!--m1.piu.Save-->
-                <attr bundlevalue="m1.piu.Bundle#CTL_Save" name="displayName"/>
-                <attr
-                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
-                <attr name="delegate" newvalue="m1.piu.Save"/>
-                <attr boolvalue="false" name="noIconInMenu"/>
-            </file>
-            <file name="m1-piu-NouvelleFiche.instance">
-                <!--m1.piu.NouvelleFiche-->
-                <attr bundlevalue="m1.piu.Bundle#CTL_NouvelleFiche" name="displayName"/>
-                <attr
-                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
-                <attr name="delegate" newvalue="m1.piu.NouvelleFiche"/>
-                <attr boolvalue="false" name="noIconInMenu"/>
-            </file>
-        </folder>
-        <folder name="Window">
-            <file name="m1-piu-adressBookTopComponent.instance">
-                <!--m1.piu.adressBookTopComponent-->
-                <attr
-                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
-                <attr name="component" newvalue="m1.piu.adressBookTopComponent"/>
-                <attr name="preferredID" stringvalue="adressBookTopComponent"/>
-                <attr bundlevalue="m1.piu.Bundle#CTL_adressBookAction" name="displayName"/>
-            </file>
-            <file name="m1-piu-contactDetailsTopComponent.instance">
-                <!--m1.piu.contactDetailsTopComponent-->
-                <attr
-                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
-                <attr name="component" newvalue="m1.piu.contactDetailsTopComponent"/>
-                <attr name="preferredID" stringvalue="contactDetailsTopComponent"/>
-                <attr
-                    bundlevalue="m1.piu.Bundle#CTL_contactDetailsAction" name="displayName"/>
-            </file>
-            <file name="m1-piu-listContactTopComponent.instance">
-                <!--m1.piu.listContactTopComponent-->
-                <attr
-                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
-                <attr name="component" newvalue="m1.piu.listContactTopComponent"/>
-                <attr name="preferredID" stringvalue="listContactTopComponent"/>
-                <attr bundlevalue="m1.piu.Bundle#CTL_listContactAction" name="displayName"/>
-            </file>
-        </folder>
-    </folder>
-    <folder name="Menu">
-        <folder name="Vue">
-            <file name="m1-piu-Clear.shadow">
-                <!--m1.piu.Clear-->
-                <attr name="originalFile" stringvalue="Actions/File/m1-piu-Clear.instance"/>
-                <attr intvalue="3333" name="position"/>
-            </file>
-        </folder>
-        <folder name="Window">
-            <file name="m1-piu-adressBookTopComponent.shadow">
-                <!--m1.piu.adressBookTopComponent-->
-                <attr name="originalFile" stringvalue="Actions/Window/m1-piu-adressBookTopComponent.instance"/>
-            </file>
-            <file name="m1-piu-contactDetailsTopComponent.shadow">
-                <!--m1.piu.contactDetailsTopComponent-->
-                <attr name="originalFile" stringvalue="Actions/Window/m1-piu-contactDetailsTopComponent.instance"/>
-            </file>
-            <file name="m1-piu-listContactTopComponent.shadow">
-                <!--m1.piu.listContactTopComponent-->
-                <attr name="originalFile" stringvalue="Actions/Window/m1-piu-listContactTopComponent.instance"/>
-            </file>
-        </folder>
-        <folder name="File">
-            <file name="m1-piu-Open.shadow">
-                <!--m1.piu.Open-->
-                <attr name="originalFile" stringvalue="Actions/File/m1-piu-Open.instance"/>
-                <attr intvalue="2400" name="position"/>
-            </file>
-            <file name="m1-piu-Save.shadow">
-                <!--m1.piu.Save-->
-                <attr name="originalFile" stringvalue="Actions/File/m1-piu-Save.instance"/>
-                <attr intvalue="2500" name="position"/>
-            </file>
-            <file name="m1-piu-NouvelleFiche.shadow">
-                <!--m1.piu.NouvelleFiche-->
-                <attr name="originalFile" stringvalue="Actions/File/m1-piu-NouvelleFiche.instance"/>
-                <attr intvalue="2300" name="position"/>
-            </file>
-        </folder>
-    </folder>
     <folder name="Windows2">
         <folder name="Components">
             <file name="adressBookTopComponent.settings">
@@ -244,6 +230,20 @@
 </tc-ref>
 ]]></file>
             </folder>
+        </folder>
+    </folder>
+    <folder name="Templates">
+        <folder name="Other">
+            <file name="m1-piu-ContactFormWizardIterator">
+                <!--m1.piu.ContactFormWizardIterator-->
+                <attr boolvalue="true" name="template"/>
+                <attr
+                    bundlevalue="m1.piu.Bundle#ContactFormWizardIterator_displayName" name="displayName"/>
+                <attr name="iconBase" stringvalue="m1/piu/flash.jpg"/>
+                <attr name="instantiatingWizardURL" urlvalue="nbresloc:/m1/piu/contactForm.html"/>
+                <attr name="instantiatingIterator" newvalue="m1.piu.ContactFormWizardIterator"/>
+                <attr boolvalue="true" name="requireProject"/>
+            </file>
         </folder>
     </folder>
 </filesystem>

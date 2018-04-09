@@ -1,9 +1,9 @@
-/usr/local/stow/netbeans82/platform=1475838976000
-cluster./home/etudiants/inf/uapv1502017/Donnees_itinerantes/Mes Documents/projets netbeans/ContactManagerApplication/build/cluster=1523292967000
-cluster./usr/local/stow/netbeans82/platform=1475838976000
-user=1523292967000
+C:\Program Files\NetBeans 8.2\platform=1519331235581
+cluster.G:/Nicolas/Documents/NetBeansProjects/ContactManagerApplication/build/cluster=1523304433077
+cluster.C:/Program Files/NetBeans 8.2/platform=1519331235581
+user=1523304433077
 crc=7
 locale=fr_FR
 branding=contactmanagerapplication
-java.version=1.8.0_161
-java.vm.version=25.161-b12
+java.version=1.8.0_102
+java.vm.version=25.102-b14
