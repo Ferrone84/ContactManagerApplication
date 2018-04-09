@@ -96,6 +96,22 @@
                 <attr name="delegate" newvalue="m1.piu.Clear"/>
                 <attr boolvalue="false" name="noIconInMenu"/>
             </file>
+            <file name="m1-piu-Open.instance">
+                <!--m1.piu.Open-->
+                <attr bundlevalue="m1.piu.Bundle#CTL_Open" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="m1.piu.Open"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+            <file name="m1-piu-Save.instance">
+                <!--m1.piu.Save-->
+                <attr bundlevalue="m1.piu.Bundle#CTL_Save" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="m1.piu.Save"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
         </folder>
         <folder name="Window">
             <file name="m1-piu-adressBookTopComponent.instance">
@@ -145,6 +161,18 @@
             <file name="m1-piu-listContactTopComponent.shadow">
                 <!--m1.piu.listContactTopComponent-->
                 <attr name="originalFile" stringvalue="Actions/Window/m1-piu-listContactTopComponent.instance"/>
+            </file>
+        </folder>
+        <folder name="File">
+            <file name="m1-piu-Open.shadow">
+                <!--m1.piu.Open-->
+                <attr name="originalFile" stringvalue="Actions/File/m1-piu-Open.instance"/>
+                <attr intvalue="2400" name="position"/>
+            </file>
+            <file name="m1-piu-Save.shadow">
+                <!--m1.piu.Save-->
+                <attr name="originalFile" stringvalue="Actions/File/m1-piu-Save.instance"/>
+                <attr intvalue="2500" name="position"/>
             </file>
         </folder>
     </folder>

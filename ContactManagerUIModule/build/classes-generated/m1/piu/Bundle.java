@@ -10,6 +10,20 @@ class Bundle {
         return org.openide.util.NbBundle.getMessage(Bundle.class, "CTL_Clear");
     }
     /**
+     * @return <i>Open</i>
+     * @see Open
+     */
+    static String CTL_Open() {
+        return org.openide.util.NbBundle.getMessage(Bundle.class, "CTL_Open");
+    }
+    /**
+     * @return <i>Save</i>
+     * @see Save
+     */
+    static String CTL_Save() {
+        return org.openide.util.NbBundle.getMessage(Bundle.class, "CTL_Save");
+    }
+    /**
      * @return <i>addressBook</i>
      * @see addressBookTopComponent
      */

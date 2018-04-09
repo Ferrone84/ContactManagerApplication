@@ -41,11 +41,11 @@
   <bounds x="844" y="336" width="1075" height="617" />
     </editor-area>
     <screen width="1920" height="1080"/>
-    <active-mode name="editor"/>
+    <active-mode name="explorer"/>
     <toolbar configuration="Standard" preferred-icon-size="24"/>
     <tc-list>
-  <tc-id id="listContactTopComponent"/>
   <tc-id id="adressBookTopComponent"/>
+  <tc-id id="listContactTopComponent"/>
   <tc-id id="contactDetailsTopComponent"/>
     </tc-list>
 </windowmanager>
