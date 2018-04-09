@@ -10,6 +10,13 @@ class Bundle {
         return org.openide.util.NbBundle.getMessage(Bundle.class, "CTL_Clear");
     }
     /**
+     * @return <i>Nouvelle Fiche</i>
+     * @see NouvelleFiche
+     */
+    static String CTL_NouvelleFiche() {
+        return org.openide.util.NbBundle.getMessage(Bundle.class, "CTL_NouvelleFiche");
+    }
+    /**
      * @return <i>Open</i>
      * @see Open
      */

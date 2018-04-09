@@ -6,10 +6,11 @@
   <kind type="view" />
   <state type="joined"  />
   <constraints>
-    <path orientation="horizontal" number="20" weight="0.2663779101245263"/>
+    <path orientation="horizontal" number="20" weight="0.3"/>
+    <path orientation="vertical" number="20" weight="0.5"/>
   </constraints>
-  <bounds x="256" y="308" width="819" height="701" />
+  <bounds x="185" y="232" width="593" height="528" />
   <frame state="0"/>
-    <active-tc  id="adressBookTopComponent"  prev-id="addressBookTopComponent" />
+    <active-tc  id="adressBookTopComponent" />
     <empty-behavior permanent="true"/>
 </mode>

@@ -112,6 +112,14 @@
                 <attr name="delegate" newvalue="m1.piu.Save"/>
                 <attr boolvalue="false" name="noIconInMenu"/>
             </file>
+            <file name="m1-piu-NouvelleFiche.instance">
+                <!--m1.piu.NouvelleFiche-->
+                <attr bundlevalue="m1.piu.Bundle#CTL_NouvelleFiche" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="m1.piu.NouvelleFiche"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
         </folder>
         <folder name="Window">
             <file name="m1-piu-adressBookTopComponent.instance">
@@ -173,6 +181,11 @@
                 <!--m1.piu.Save-->
                 <attr name="originalFile" stringvalue="Actions/File/m1-piu-Save.instance"/>
                 <attr intvalue="2500" name="position"/>
+            </file>
+            <file name="m1-piu-NouvelleFiche.shadow">
+                <!--m1.piu.NouvelleFiche-->
+                <attr name="originalFile" stringvalue="Actions/File/m1-piu-NouvelleFiche.instance"/>
+                <attr intvalue="2300" name="position"/>
             </file>
         </folder>
     </folder>
